@@ -46,8 +46,8 @@ function App() {
     }
   };
 
-  const hendleClickImage = evt => {
-    const isCardImage = evt.target;
+  const hendleClickImage = e => {
+    const isCardImage = e.target;
     const galleryId = +isCardImage.getAttribute('data-id');
     const hits = images;
     const galleryObject = hits.find(item => item.id === galleryId);
