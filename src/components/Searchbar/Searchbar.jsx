@@ -9,8 +9,8 @@ function Searchbar({ onSubmit }) {
   const hendleChange = e => {
     setSearchName(e.currentTarget.value.toLowerCase());
   };
-  const handleSubmit = evt => {
-    evt.preventDefault();
+  const handleSubmit = e => {
+    e.preventDefault();
 
     if (searchName.trim() === '') {
       return toast('Треба написати що шукаєте');
